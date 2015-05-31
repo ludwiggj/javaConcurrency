@@ -1,4 +1,4 @@
-package org.ludwiggj.concurrency;
+package org.ludwiggj.concurrency.latches.seeder;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -20,7 +20,7 @@ public class ConcurrentHashMapWithCountDownLatchExample {
   private static ExecutorService executor;
 
   public static void main(String[] args) {
-    dataMap = new ConcurrentHashMap<String, Integer>(16, 0.9f, 1);
+    dataMap = new ConcurrentHashMap<>(16, 0.9f, 1);
     latch = new CountDownLatch(TOTAL_NUMBER_OF_THREADS);
     executor = Executors.newFixedThreadPool(TOTAL_NUMBER_OF_THREADS);
 

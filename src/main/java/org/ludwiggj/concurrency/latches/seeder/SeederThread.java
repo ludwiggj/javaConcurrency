@@ -1,4 +1,4 @@
-package org.ludwiggj.concurrency;
+package org.ludwiggj.concurrency.latches.seeder;
 
 import java.util.ArrayList;
 import java.util.Collections;

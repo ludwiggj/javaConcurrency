@@ -1,4 +1,4 @@
-package org.ludwiggj.concurrency;
+package org.ludwiggj.concurrency.latches.seeder;
 
 import java.util.*;
 import java.util.concurrent.CountDownLatch;
@@ -45,7 +45,7 @@ public class WorkerThread implements Runnable {
   }
 
   private void createTargetList() {
-    targetList = new ArrayList<Integer>();
+    targetList = new ArrayList<>();
     for (int i = minTarget; i <= maxTarget; i++) {
       targetList.add(i);
     }
